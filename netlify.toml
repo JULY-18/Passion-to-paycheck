@@ -1,0 +1,10 @@
+[build]
+  base = "frontend"
+  command = "npm run build"
+  publish = "out"
+
+# This handles client-side routing fallback if needed
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
